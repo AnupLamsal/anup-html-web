@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#nav-bar {
+    position: sticky;
+    top: 0px;
+    align-items: center;
+    z-index: 10;
+}
+
+.navbar-brand {
+    margin: 5px 30px;
+}
+
+.navbar-brand img {
+    width: 20vh;
+    cursor: pointer;
+}
+
+.navbar-nav {
+    margin-right: 20px;
+}
+
+.navbar-nav li {
+    padding: 0px 10px;
+}
+
+.navbar-nav li a {
+    float: right;
+    text-align: left;
+}
+
+.navbar-nav li a:hover {
+    color: darkturquoise !important;
+}
+
+.navbar {
+    background: #fff;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.nav-link {
+    font-size: 20px;
+}
+
+
+#slider {
+    width: 100%;
+}
+
+.carousel-caption {
+    top: 59%;
+    transform: translateY(-50%);
+    bottom: initial !important;
+}
+
+.carousel-caption h5 {
+    font-size: 42px;
+    color: #fff;
+}
+
+
+#description {
+    /* background-color: hotpink; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 17vh;
+    color: hotpink;
+}
+
+#description h1 {
+    text-align: center;
+    transform: translateX(-5%);
+    margin-bottom: 5vh;
+}
+
+#description h1::before {
+    content: '';
+    background: hotpink;
+    display: block;
+    height: 8px;
+    width: 70px;
+    margin: 60px auto -12vh;
+}
+
+#description h1:after {
+    content: '';
+    background: hotpink;
+    display: block;
+    height: 5px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+
+.img-box img {
+    width: 70%;
+    animation: jaddo 5s ease;
+    animation-delay: 10s;
+    margin-bottom: 3vh;
+}
+
+.img-box img:hover {
+    filter: grayscale(100%);
+}
+
+.img-box ul {
+    padding: 15px 0px;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 36%;
+    transform: translateX(-50%);
+    list-style-type: none;
+    opacity: 0;
+}
+
+.img-box ul li {
+    padding: 15px;
+    display: inline-block;
+    font-size: 25px;
+    color: indianred;
+}
+
+.img-box:hover ul {
+    opacity: 1;
+}
+
+.img-box ul, .img-box ul li {
+    transition: 0.5s;
+}
+
+@keyframes jaddo {
+    0% {
+        transform: translateY(-20%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
